@@ -44,6 +44,7 @@ jobs:
 
       - name: Commit final sedna.jar
         run: |
+          git config --global --add safe.directory /__w/oc2r-alpinus/oc2r-alpinus
           git config user.name "ollix26"
           git config user.email "madziagra57@gmail.com"
           git add sedna.jar
