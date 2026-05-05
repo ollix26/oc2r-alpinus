@@ -41,14 +41,26 @@ jobs:
       - name: Repack sedna/ → sedna_inner.jar
         run: |
           cd sedna
-          jar cf ../sedna_inner.jar .
+          python3 -c "
+          import zipfile, os
+          with zipfile.ZipFile('../sedna_inner.jar', 'w', zipfile.ZIP_DEFLATED) as z:
+              for root, dirs, files in os.walk('.'):
+                  for file in files:
+                      z.write(os.path.join(root, file))
+          "
           cd ..
-
+          
       - name: Inject and repack → final jar
         run: |
           cp sedna_inner.jar java/META-INF/jarjar/sedna.jar
           cd java
-          jar cf ../oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar .
+          python3 -c "
+          import zipfile, os
+          with zipfile.ZipFile('../oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar', 'w', zipfile.ZIP_DEFLATED) as z:
+              for root, dirs, files in os.walk('.'):
+                  for file in files:
+                      z.write(os.path.join(root, file))
+          "
           cd ..
           
       - name: Rename artifact
