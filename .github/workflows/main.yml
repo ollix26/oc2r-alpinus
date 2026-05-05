@@ -1,0 +1,69 @@
+name: Build sedna.jar
+
+on:
+  workflow_dispatch: 
+  push:
+    branches: [main]
+    paths:
+      - 'new-rootfs-X11/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y gcc make zlib1g-dev wget zip git
+
+      - name: Build mkcramfs from source
+        run: |
+          wget https://github.com/npitre/cramfs-tools/archive/refs/heads/master.tar.gz
+          tar -xf master.tar.gz
+          cd cramfs-tools-master
+          make
+          sudo cp mkcramfs /usr/local/bin/
+          cd ..
+
+      - name: Remove .gitkeep files
+        run: find new-rootfs-X11/ -name ".gitkeep" -delete
+
+      - name: Build rootfs.cramfs
+        run: mkcramfs new-rootfs-X11/ sedna/generated/rootfs.cramfs
+
+      - name: Repack sedna/ → sedna_inner.jar
+        run: |
+          cd sedna
+          python3 -c "
+          import zipfile, os
+          with zipfile.ZipFile('../sedna_inner.jar', 'w', zipfile.ZIP_DEFLATED) as z:
+              for root, dirs, files in os.walk('.'):
+                  for file in files:
+                      z.write(os.path.join(root, file))
+          "
+          cd ..
+
+      - name: Inject and repack → final jar
+        run: |
+          cp sedna_inner.jar java/META-INF/jarjar/sedna.jar
+          cd java
+          python3 -c "
+          import zipfile, os
+          with zipfile.ZipFile('../oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar', 'w', zipfile.ZIP_DEFLATED) as z:
+              for root, dirs, files in os.walk('.'):
+                  for file in files:
+                      z.write(os.path.join(root, file))
+          "
+          cd ..
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v1.${{ github.run_number }}.0
+          name: oc2r-alpinus-X11-1.${{ github.run_number }}.0
+          files: oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar
+          prerelease: false
