@@ -1,7 +1,7 @@
 name: Build sedna.jar
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: 
   push:
     branches: [main]
     paths:
@@ -10,11 +10,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: debian:bullseye   # still has cramfsprogs
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Install mkcramfs
-        run: sudo apt-get install -y cramfsprogs
+        run: apt-get update && apt-get install -y cramfsprogs zip git
 
       - name: Build rootfs.cramfs into sedna/generated/
         run: mkcramfs new-rootfs-X11/ sedna/generated/rootfs.cramfs
