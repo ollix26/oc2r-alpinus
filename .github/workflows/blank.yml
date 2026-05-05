@@ -1,6 +1,7 @@
 name: Build sedna.jar
 
 on:
+  workflow_dispatch: 
   push:
     branches: [main]
     paths:
