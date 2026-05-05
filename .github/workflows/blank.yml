@@ -45,10 +45,13 @@ jobs:
           zip -r ../sedna.jar .
           cd ..
 
+      - name: Rename artifact
+        run: mv sedna.jar oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: latest
-          name: Latest Build
-          files: sedna.jar
-          prerelease: true
+          tag_name: v1.${{ github.run_number }}.0
+          name: oc2r-alpinus-X11-1.${{ github.run_number }}.0
+          files: oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar
+          prerelease: false
