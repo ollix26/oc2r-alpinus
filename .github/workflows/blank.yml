@@ -16,8 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install mkcramfs
-        run: apt-get update && apt-get install -y cramfsprogs zip git
+      - name: Build mkcramfs from source
+        run: |
+          apt-get update && apt-get install -y gcc make zlib1g-dev wget zip git
+          wget https://github.com/npitre/cramfs-tools/archive/refs/heads/master.tar.gz
+          tar -xf master.tar.gz
+          cd cramfs-tools-master
+          make
+          cp mkcramfs /usr/local/bin/
+          cd ..
 
       - name: Build rootfs.cramfs into sedna/generated/
         run: mkcramfs new-rootfs-X11/ sedna/generated/rootfs.cramfs
