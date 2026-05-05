@@ -1,7 +1,6 @@
 name: Build sedna.jar
 
 on:
-  workflow_dispatch: 
   push:
     branches: [main]
     paths:
@@ -10,27 +9,26 @@ on:
 permissions:
   contents: write
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: debian:bullseye   # still has cramfsprogs
 
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y gcc make zlib1g-dev wget zip git
+
       - name: Build mkcramfs from source
         run: |
-          apt-get update && apt-get install -y gcc make zlib1g-dev wget zip git
           wget https://github.com/npitre/cramfs-tools/archive/refs/heads/master.tar.gz
           tar -xf master.tar.gz
           cd cramfs-tools-master
           make
-          cp mkcramfs /usr/local/bin/
+          sudo cp mkcramfs /usr/local/bin/
           cd ..
 
-      - name: Build rootfs.cramfs into sedna/generated/
+      - name: Build rootfs.cramfs
         run: mkcramfs new-rootfs-X11/ sedna/generated/rootfs.cramfs
 
       - name: Repack sedna/ → sedna_inner.jar
@@ -39,7 +37,7 @@ jobs:
           zip -r ../sedna_inner.jar .
           cd ..
 
-      - name: Inject sedna_inner.jar into java/ and repack → sedna.jar
+      - name: Inject and repack → sedna.jar
         run: |
           cp sedna_inner.jar java/META-INF/jarjar/sedna.jar
           cd java
@@ -49,6 +47,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: build-${{ github.run_number }}
-          name: Build ${{ github.run_number }}
+          tag_name: latest
+          name: Latest Build
           files: sedna.jar
+          prerelease: true
