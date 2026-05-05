@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "libs",
+        "artifact": "sedna"
+      },
+      "version": {
+        "range": "[]",
+        "artifactVersion": ""
+      },
+      "path": "META-INF/jarjar/sedna.jar",
+      "isObfuscated": false
+    }
+  ]
+}

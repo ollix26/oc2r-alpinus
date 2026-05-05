@@ -1,0 +1,721 @@
+
+Running `/sbin/apk update` at 2026-05-03 07:50:21
+apk-tools 3.0.6-r0, compiled for riscv64.
+WARNING: updating and opening https://dl-cdn.alpinelinux.org/alpine/v3.23/main/riscv64/APKINDEX.tar.gz: DNS: transient error (try again later)
+WARNING: updating and opening https://dl-cdn.alpinelinux.org/alpine/v3.23/community/riscv64/APKINDEX.tar.gz: DNS: transient error (try again later)
+2 unavailable, 0 stale; 16 distinct packages available
+
+Running `/sbin/apk add openrc` at 2026-05-03 07:50:39
+apk-tools 3.0.6-r0, compiled for riscv64.
+WARNING: updating and opening https://dl-cdn.alpinelinux.org/alpine/v3.23/main/riscv64/APKINDEX.tar.gz: DNS: transient error (try again later)
+WARNING: updating and opening https://dl-cdn.alpinelinux.org/alpine/v3.23/community/riscv64/APKINDEX.tar.gz: DNS: transient error (try again later)
+ERROR: unable to select packages:
+  openrc (no such package):
+    required by: world[openrc]
+
+Running `/sbin/apk add e2fsprogs` at 2026-05-03 17:59:12
+apk-tools 3.0.6-r0, compiled for riscv64.
+WARNING: updating and opening https://dl-cdn.alpinelinux.org/alpine/v3.23/main/riscv64/APKINDEX.tar.gz: DNS: transient error (try again later)
+WARNING: updating and opening https://dl-cdn.alpinelinux.org/alpine/v3.23/community/riscv64/APKINDEX.tar.gz: DNS: transient error (try again later)
+ERROR: unable to select packages:
+  e2fsprogs (no such package):
+    required by: world[e2fsprogs]
+
+Running `/sbin/apk add e2fsprogs` at 2026-05-03 18:02:00
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/6) Installing libeconf (0.8.3-r0)
+(2/6) Installing libblkid (2.41.4-r0)
+(3/6) Installing libcom_err (1.47.3-r0)
+(4/6) Installing e2fsprogs-libs (1.47.3-r0)
+(5/6) Installing libuuid (2.41.4-r0)
+(6/6) Installing e2fsprogs (1.47.3-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 8057 KiB in 22 packages
+
+Running `/sbin/apk add fastfetch` at 2026-05-03 18:02:16
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/2) Installing hwdata-pci (0.401-r0)
+(2/2) Installing fastfetch (2.56.0-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 11.1 MiB in 24 packages
+
+Running `/sbin/apk add python` at 2026-05-03 18:25:37
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  python (no such package):
+    required by: world[python]
+
+Running `/sbin/apk add python3` at 2026-05-03 18:26:01
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/17) Installing libbz2 (1.0.8-r6)
+( 2/17) Installing libexpat (2.7.5-r0)
+( 3/17) Installing libffi (3.5.2-r0)
+( 4/17) Installing gdbm (1.26-r0)
+( 5/17) Installing xz-libs (5.8.3-r0)
+( 6/17) Installing libgcc (15.2.0-r2)
+( 7/17) Installing libstdc++ (15.2.0-r2)
+( 8/17) Installing mpdecimal (4.0.1-r0)
+( 9/17) Installing ncurses-terminfo-base (6.5_p20251123-r0)
+(10/17) Installing libncursesw (6.5_p20251123-r0)
+(11/17) Installing libpanelw (6.5_p20251123-r0)
+(12/17) Installing readline (8.3.1-r0)
+(13/17) Installing sqlite-libs (3.51.2-r0)
+(14/17) Installing python3 (3.12.13-r0)
+(15/17) Installing python3-pycache-pyc0 (3.12.13-r0)
+(16/17) Installing pyc (3.12.13-r0)
+(17/17) Installing python3-pyc (3.12.13-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 49.0 MiB in 41 packages
+
+Running `/sbin/apk add curl` at 2026-05-03 18:26:39
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/10) Installing brotli-libs (1.2.0-r0)
+( 2/10) Installing c-ares (1.34.6-r0)
+( 3/10) Installing libunistring (1.4.1-r0)
+( 4/10) Installing libidn2 (2.3.8-r0)
+( 5/10) Installing nghttp2-libs (1.69.0-r0)
+( 6/10) Installing nghttp3 (1.13.1-r0)
+( 7/10) Installing libpsl (0.21.5-r3)
+( 8/10) Installing zstd-libs (1.5.7-r2)
+( 9/10) Installing libcurl (8.17.0-r1)
+(10/10) Installing curl (8.17.0-r1)
+Executing busybox-1.37.0-r30.trigger
+OK: 53.9 MiB in 51 packages
+
+Running `/sbin/apk add xorg-server xf86-video-fbdev xinit` at 2026-05-04 12:47:58
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/53) Installing xf86-video-fbdev (0.5.0-r6)
+( 2/53) Installing libxau (1.0.12-r0)
+( 3/53) Installing libmd (1.1.0-r0)
+( 4/53) Installing libbsd (0.12.2-r0)
+( 5/53) Installing libxdmcp (1.1.5-r1)
+( 6/53) Installing libxcb (1.17.0-r1)
+( 7/53) Installing libx11 (1.8.12-r1)
+( 8/53) Installing libxext (1.3.6-r2)
+( 9/53) Installing libice (1.1.2-r0)
+(10/53) Installing libsm (1.2.6-r0)
+(11/53) Installing libxt (1.3.1-r0)
+(12/53) Installing libxmu (1.2.1-r0)
+(13/53) Installing xauth (1.1.4-r0)
+(14/53) Installing mcookie (2.41.4-r0)
+(15/53) Installing xmodmap (1.0.11-r1)
+(16/53) Installing xrdb (1.2.2-r0)
+(17/53) Installing xinit (1.4.4-r0)
+(18/53) Installing encodings (1.1.0-r0)
+(19/53) Installing font-alias (1.0.5-r0)
+(20/53) Installing libfontenc (1.1.8-r0)
+(21/53) Installing libpng (1.6.57-r0)
+(22/53) Installing freetype (2.14.1-r0)
+(23/53) Installing mkfontscale (1.2.3-r1)
+(24/53) Installing fontconfig (2.17.1-r0)
+(25/53) Installing pkgconf (2.5.1-r0)
+(26/53) Installing util-macros (1.20.2-r0)
+(27/53) Installing font-cursor-misc (1.0.4-r1)
+(28/53) Installing font-misc-misc (1.1.3-r1)
+(29/53) Installing libxml2 (2.13.9-r0)
+(30/53) Installing llvm21-libs (21.1.2-r1)
+(31/53) Installing libpciaccess (0.18.1-r1)
+(32/53) Installing libdrm (2.4.131-r0)
+(33/53) Installing libelf (0.194-r0)
+(34/53) Installing libxshmfence (1.3.3-r0)
+(35/53) Installing mesa (25.2.7-r1)
+(36/53) Installing mesa-gles (25.2.7-r1)
+(37/53) Installing mesa-gbm (25.2.7-r1)
+(38/53) Installing wayland-libs-client (1.24.0-r0)
+(39/53) Installing mesa-egl (25.2.7-r1)
+(40/53) Installing libxkbfile (1.1.3-r0)
+(41/53) Installing xkbcomp (1.5.0-r0)
+(42/53) Installing xkeyboard-config (2.46-r0)
+(43/53) Installing xorg-server-common (21.1.22-r0)
+(44/53) Installing libxxf86vm (1.1.7-r0)
+(45/53) Installing mesa-gl (25.2.7-r1)
+(46/53) Installing libxfont2 (2.0.7-r0)
+(47/53) Installing libepoxy (1.5.10-r1)
+(48/53) Installing gmp (6.3.0-r4)
+(49/53) Installing nettle (3.10.2-r0)
+(50/53) Installing pixman (0.46.4-r0)
+(51/53) Installing eudev-libs (3.2.14-r6)
+(52/53) Installing libxcvt (0.1.3-r0)
+(53/53) Installing xorg-server (21.1.22-r0)
+Executing busybox-1.37.0-r30.trigger
+Executing mkfontscale-1.2.3-r1.trigger
+Executing fontconfig-2.17.1-r0.trigger
+OK: 244.2 MiB in 104 packages
+
+Running `/sbin/apk add vim` at 2026-05-04 12:49:12
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/3) Installing vim-common (9.2.0437-r0)
+(2/3) Installing xxd (9.2.0437-r0)
+(3/3) Installing vim (9.2.0437-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 273.7 MiB in 107 packages
+
+Running `/sbin/apk add xterm` at 2026-05-04 13:04:06
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/5) Installing libxpm (3.5.19-r0)
+(2/5) Installing libxaw (1.0.16-r1)
+(3/5) Installing libxrender (0.9.12-r0)
+(4/5) Installing libxft (2.3.9-r0)
+(5/5) Installing xterm (403-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 275.0 MiB in 112 packages
+
+Running `/sbin/apk add xclock` at 2026-05-04 13:04:12
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing xclock (1.1.1-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 275.0 MiB in 113 packages
+
+Running `/sbin/apk add xf86-input-evdev` at 2026-05-04 13:36:55
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/3) Installing libevdev (1.13.6-r0)
+(2/3) Installing mtdev (1.1.7-r0)
+(3/3) Installing xf86-input-evdev (2.11.0-r0)
+OK: 275.2 MiB in 116 packages
+
+Running `/sbin/apk add xkbset` at 2026-05-04 14:33:51
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  xkbset (no such package):
+    required by: world[xkbset]
+
+Running `/sbin/apk add setxkbmap` at 2026-05-04 14:36:36
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/2) Installing libxrandr (1.5.4-r1)
+(2/2) Installing setxkbmap (1.3.4-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 275.2 MiB in 118 packages
+
+Running `/sbin/apk add netsurf` at 2026-05-04 14:38:15
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/43) Installing cairo (1.18.4-r0)
+( 2/43) Installing libintl (0.24.1-r1)
+( 3/43) Installing libmount (2.41.4-r0)
+( 4/43) Installing pcre2 (10.47-r0)
+( 5/43) Installing glib (2.86.3-r0)
+( 6/43) Installing gobject-introspection (1.86.0-r0)
+( 7/43) Installing hicolor-icon-theme (0.18-r0)
+( 8/43) Installing shared-mime-info (2.4-r6)
+( 9/43) Installing libjpeg-turbo (3.1.2-r0)
+(10/43) Installing libsharpyuv (1.6.0-r0)
+(11/43) Installing libwebp (1.6.0-r0)
+(12/43) Installing tiff (4.7.1-r0)
+(13/43) Installing gdk-pixbuf (2.44.4-r0)
+(14/43) Installing gtk-update-icon-cache (3.24.51-r0)
+(15/43) Installing libxcomposite (0.4.6-r5)
+(16/43) Installing libxfixes (6.0.2-r0)
+(17/43) Installing libxcursor (1.2.3-r0)
+(18/43) Installing libxdamage (1.1.6-r5)
+(19/43) Installing libxi (1.8.2-r0)
+(20/43) Installing libxinerama (1.1.5-r4)
+(21/43) Installing libatk-1.0 (2.58.3-r0)
+(22/43) Installing dbus-libs (1.16.2-r1)
+(23/43) Installing at-spi2-core-libs (2.58.3-r0)
+(24/43) Installing libxtst (1.2.5-r0)
+(25/43) Installing at-spi2-core (2.58.3-r0)
+(26/43) Installing libatk-bridge-2.0 (2.58.3-r0)
+(27/43) Installing cairo-gobject (1.18.4-r0)
+(28/43) Installing avahi-libs (0.8-r23)
+(29/43) Installing libtasn1 (4.21.0-r0)
+(30/43) Installing p11-kit (0.25.5-r2)
+(31/43) Installing gnutls (3.8.13-r0)
+(32/43) Installing cups-libs (2.4.18-r0)
+(33/43) Installing fribidi (1.0.16-r2)
+(34/43) Installing graphite2 (1.3.14-r6)
+(35/43) Installing harfbuzz (12.2.0-r0)
+(36/43) Installing pango (1.56.4-r0)
+(37/43) Installing wayland-libs-cursor (1.24.0-r0)
+(38/43) Installing wayland-libs-egl (1.24.0-r0)
+(39/43) Installing libxkbcommon (1.12.2-r0)
+(40/43) Installing gtk+3.0 (3.24.51-r0)
+(41/43) Installing libdav1d (1.5.2-r0)
+(42/43) Installing librsvg (2.61.2-r0)
+(43/43) Installing netsurf (3.11-r1)
+Executing busybox-1.37.0-r30.trigger
+Executing glib-2.86.3-r0.trigger
+Executing shared-mime-info-2.4-r6.trigger
+Executing gdk-pixbuf-2.44.4-r0.trigger
+Executing gtk-update-icon-cache-3.24.51-r0.trigger
+Executing gtk+3.0-3.24.51-r0.trigger
+OK: 311.9 MiB in 161 packages
+
+Running `/sbin/apk del netsurf` at 2026-05-04 14:54:57
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/43) Purging at-spi2-core (2.58.3-r0)
+( 2/43) Purging libxtst (1.2.5-r0)
+( 3/43) Purging netsurf (3.11-r1)
+( 4/43) Purging gtk+3.0 (3.24.51-r0)
+  Executing gtk+3.0-3.24.51-r0.post-deinstall
+( 5/43) Purging gobject-introspection (1.86.0-r0)
+( 6/43) Purging gtk-update-icon-cache (3.24.51-r0)
+( 7/43) Purging hicolor-icon-theme (0.18-r0)
+( 8/43) Purging libatk-bridge-2.0 (2.58.3-r0)
+( 9/43) Purging at-spi2-core-libs (2.58.3-r0)
+(10/43) Purging cups-libs (2.4.18-r0)
+(11/43) Purging avahi-libs (0.8-r23)
+(12/43) Purging librsvg (2.61.2-r0)
+(13/43) Purging pango (1.56.4-r0)
+(14/43) Purging cairo-gobject (1.18.4-r0)
+(15/43) Purging cairo (1.18.4-r0)
+(16/43) Purging dbus-libs (1.16.2-r1)
+(17/43) Purging fribidi (1.0.16-r2)
+(18/43) Purging gdk-pixbuf (2.44.4-r0)
+  Executing gdk-pixbuf-2.44.4-r0.pre-deinstall
+(19/43) Purging shared-mime-info (2.4-r6)
+  Executing shared-mime-info-2.4-r6.post-deinstall
+(20/43) Purging harfbuzz (12.2.0-r0)
+(21/43) Purging libatk-1.0 (2.58.3-r0)
+(22/43) Purging glib (2.86.3-r0)
+(23/43) Purging gnutls (3.8.13-r0)
+(24/43) Purging graphite2 (1.3.14-r6)
+(25/43) Purging libdav1d (1.5.2-r0)
+(26/43) Purging libintl (0.24.1-r1)
+(27/43) Purging tiff (4.7.1-r0)
+(28/43) Purging libjpeg-turbo (3.1.2-r0)
+(29/43) Purging libmount (2.41.4-r0)
+(30/43) Purging libwebp (1.6.0-r0)
+(31/43) Purging libsharpyuv (1.6.0-r0)
+(32/43) Purging p11-kit (0.25.5-r2)
+(33/43) Purging libtasn1 (4.21.0-r0)
+(34/43) Purging libxcomposite (0.4.6-r5)
+(35/43) Purging libxcursor (1.2.3-r0)
+(36/43) Purging libxdamage (1.1.6-r5)
+(37/43) Purging libxfixes (6.0.2-r0)
+(38/43) Purging libxi (1.8.2-r0)
+(39/43) Purging libxinerama (1.1.5-r4)
+(40/43) Purging libxkbcommon (1.12.2-r0)
+(41/43) Purging pcre2 (10.47-r0)
+(42/43) Purging wayland-libs-cursor (1.24.0-r0)
+(43/43) Purging wayland-libs-egl (1.24.0-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 275.2 MiB in 118 packages
+
+Running `/sbin/apk add surf` at 2026-05-04 14:55:06
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  surf (no such package):
+    required by: world[surf]
+
+Running `/sbin/apk add w3m` at 2026-05-04 14:55:17
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/2) Installing gc (8.2.10-r0)
+(2/2) Installing w3m (0.5.5-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 277.2 MiB in 120 packages
+
+Running `/sbin/apk add emacs` at 2026-05-04 14:55:22
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing emacs (30.2-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 291.6 MiB in 121 packages
+
+Running `/sbin/apk add emacs-x11` at 2026-05-04 15:00:55
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/33) Installing libintl (0.24.1-r1)
+( 2/33) Installing libmount (2.41.4-r0)
+( 3/33) Installing pcre2 (10.47-r0)
+( 4/33) Installing glib (2.86.3-r0)
+( 5/33) Installing desktop-file-utils (0.28-r0)
+( 6/33) Installing desktop-file-utils-emacs (0.28-r0)
+( 7/33) Installing hicolor-icon-theme (0.18-r0)
+( 8/33) Installing libxcomposite (0.4.6-r5)
+( 9/33) Installing libxfixes (6.0.2-r0)
+(10/33) Installing libxi (1.8.2-r0)
+(11/33) Installing libxinerama (1.1.5-r4)
+(12/33) Installing alsa-lib (1.2.14-r2)
+(13/33) Installing cairo (1.18.4-r0)
+(14/33) Installing shared-mime-info (2.4-r6)
+(15/33) Installing libjpeg-turbo (3.1.2-r0)
+(16/33) Installing libsharpyuv (1.6.0-r0)
+(17/33) Installing libwebp (1.6.0-r0)
+(18/33) Installing tiff (4.7.1-r0)
+(19/33) Installing gdk-pixbuf (2.44.4-r0)
+(20/33) Installing giflib (5.2.2-r1)
+(21/33) Installing libtasn1 (4.21.0-r0)
+(22/33) Installing p11-kit (0.25.5-r2)
+(23/33) Installing gnutls (3.8.13-r0)
+(24/33) Installing graphite2 (1.3.14-r6)
+(25/33) Installing harfbuzz (12.2.0-r0)
+(26/33) Installing libdav1d (1.5.2-r0)
+(27/33) Installing fribidi (1.0.16-r2)
+(28/33) Installing pango (1.56.4-r0)
+(29/33) Installing librsvg (2.61.2-r0)
+(30/33) Installing tree-sitter (0.25.10-r0)
+(31/33) Installing libwebpdecoder (1.6.0-r0)
+(32/33) Installing libwebpdemux (1.6.0-r0)
+(33/33) Installing emacs-x11 (30.2-r0)
+Executing busybox-1.37.0-r30.trigger
+Executing glib-2.86.3-r0.trigger
+Executing desktop-file-utils-0.28-r0.trigger
+Executing shared-mime-info-2.4-r6.trigger
+Executing gdk-pixbuf-2.44.4-r0.trigger
+OK: 418.4 MiB in 154 packages
+
+Running `/sbin/apk add emacs-nox` at 2026-05-04 15:01:05
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  emacs-x11-30.2-r0:
+    conflicts: emacs-nox-30.2-r0[cmd:emacs-30.2=30.2-r0]
+               emacs-nox-30.2-r0[cmd:emacs=30.2-r0]
+               emacs-nox-30.2-r0[cmd:emacsclient=30.2-r0]
+    breaks: emacs-nox-30.2-r0[!emacs-x11]
+    satisfies: world[emacs-x11]
+  emacs-nox-30.2-r0:
+    conflicts: emacs-x11-30.2-r0[cmd:emacs-30.2=30.2-r0]
+               emacs-x11-30.2-r0[cmd:emacs=30.2-r0]
+               emacs-x11-30.2-r0[cmd:emacsclient=30.2-r0]
+    breaks: emacs-x11-30.2-r0[!emacs-nox]
+    satisfies: world[emacs-nox]
+
+Running `/sbin/apk del emacs-x11` at 2026-05-04 15:01:54
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/33) Purging desktop-file-utils-emacs (0.28-r0)
+( 2/33) Purging emacs-x11 (30.2-r0)
+( 3/33) Purging desktop-file-utils (0.28-r0)
+( 4/33) Purging hicolor-icon-theme (0.18-r0)
+( 5/33) Purging giflib (5.2.2-r1)
+( 6/33) Purging gnutls (3.8.13-r0)
+( 7/33) Purging librsvg (2.61.2-r0)
+( 8/33) Purging libwebpdecoder (1.6.0-r0)
+( 9/33) Purging libwebpdemux (1.6.0-r0)
+(10/33) Purging libxcomposite (0.4.6-r5)
+(11/33) Purging libxfixes (6.0.2-r0)
+(12/33) Purging libxi (1.8.2-r0)
+(13/33) Purging libxinerama (1.1.5-r4)
+(14/33) Purging p11-kit (0.25.5-r2)
+(15/33) Purging pango (1.56.4-r0)
+(16/33) Purging tree-sitter (0.25.10-r0)
+(17/33) Purging alsa-lib (1.2.14-r2)
+(18/33) Purging cairo (1.18.4-r0)
+(19/33) Purging fribidi (1.0.16-r2)
+(20/33) Purging gdk-pixbuf (2.44.4-r0)
+  Executing gdk-pixbuf-2.44.4-r0.pre-deinstall
+(21/33) Purging shared-mime-info (2.4-r6)
+  Executing shared-mime-info-2.4-r6.post-deinstall
+(22/33) Purging harfbuzz (12.2.0-r0)
+(23/33) Purging glib (2.86.3-r0)
+(24/33) Purging graphite2 (1.3.14-r6)
+(25/33) Purging libdav1d (1.5.2-r0)
+(26/33) Purging libintl (0.24.1-r1)
+(27/33) Purging tiff (4.7.1-r0)
+(28/33) Purging libjpeg-turbo (3.1.2-r0)
+(29/33) Purging libmount (2.41.4-r0)
+(30/33) Purging libwebp (1.6.0-r0)
+(31/33) Purging libsharpyuv (1.6.0-r0)
+(32/33) Purging libtasn1 (4.21.0-r0)
+(33/33) Purging pcre2 (10.47-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 291.6 MiB in 121 packages
+
+Running `/sbin/apk add emacs-nox` at 2026-05-04 15:02:00
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/6) Installing dbus-libs (1.16.2-r1)
+(2/6) Installing libtasn1 (4.21.0-r0)
+(3/6) Installing p11-kit (0.25.5-r2)
+(4/6) Installing gnutls (3.8.13-r0)
+(5/6) Installing tree-sitter (0.25.10-r0)
+(6/6) Installing emacs-nox (30.2-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 399.0 MiB in 127 packages
+
+Running `/sbin/apk add rsync` at 2026-05-04 15:17:14
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/5) Installing acl-libs (2.3.2-r1)
+(2/5) Installing lz4-libs (1.10.0-r0)
+(3/5) Installing popt (1.19-r4)
+(4/5) Installing libxxhash (0.8.3-r0)
+(5/5) Installing rsync (3.4.2-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 399.6 MiB in 132 packages
+
+Running `/sbin/apk add toilet` at 2026-05-04 15:18:00
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  toilet (no such package):
+    required by: world[toilet]
+
+Running `/sbin/apk add lsblk` at 2026-05-04 15:18:24
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/3) Installing libmount (2.41.4-r0)
+(2/3) Installing libsmartcols (2.41.4-r0)
+(3/3) Installing lsblk (2.41.4-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 400.1 MiB in 135 packages
+
+Running `/sbin/apk add steamcdm` at 2026-05-04 15:18:29
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  steamcdm (no such package):
+    required by: world[steamcdm]
+
+Running `/sbin/apk add steamcmd` at 2026-05-04 15:18:31
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  steamcmd (no such package):
+    required by: world[steamcmd]
+
+Running `/sbin/apk add ffmpeg` at 2026-05-04 15:44:42
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/76) Installing libSvtAv1Enc (3.1.2-r0)
+( 2/76) Installing aom-libs (3.13.1-r1)
+( 3/76) Installing libxfixes (6.0.2-r0)
+( 4/76) Installing libva (2.22.0-r1)
+( 5/76) Installing libvdpau (1.5-r4)
+( 6/76) Installing ffmpeg-libavutil (8.0.1-r1)
+( 7/76) Installing libdav1d (1.5.2-r0)
+( 8/76) Installing lcms2 (2.19-r0)
+( 9/76) Installing libjxl (0.11.1-r3)
+(10/76) Installing lame-libs (3.100-r5)
+(11/76) Installing opus (1.5.2-r1)
+(12/76) Installing rav1e-libs (0.8.1-r0)
+(13/76) Installing spirv-tools (1.4.321.0-r1)
+(14/76) Installing glslang-libs (1.4.321.0-r0)
+(15/76) Installing shaderc (2025.3-r0)
+(16/76) Installing libgomp (15.2.0-r2)
+(17/76) Installing soxr (0.1.3-r7)
+(18/76) Installing ffmpeg-libswresample (8.0.1-r1)
+(19/76) Installing libogg (1.3.6-r0)
+(20/76) Installing libtheora (1.2.0-r0)
+(21/76) Installing libvorbis (1.3.7-r2)
+(22/76) Installing libvpx (1.15.2-r1)
+(23/76) Installing libsharpyuv (1.6.0-r0)
+(24/76) Installing libwebp (1.6.0-r0)
+(25/76) Installing libwebpmux (1.6.0-r0)
+(26/76) Installing x264-libs (0.164.3108-r1)
+(27/76) Installing numactl (2.0.18-r0)
+(28/76) Installing x265-libs (4.1-r0)
+(29/76) Installing xvidcore (1.3.7-r2)
+(30/76) Installing ffmpeg-libavcodec (8.0.1-r1)
+(31/76) Installing alsa-lib (1.2.14-r2)
+(32/76) Installing fribidi (1.0.16-r2)
+(33/76) Installing libintl (0.24.1-r1)
+(34/76) Installing pcre2 (10.47-r0)
+(35/76) Installing glib (2.86.3-r0)
+(36/76) Installing graphite2 (1.3.14-r6)
+(37/76) Installing harfbuzz (12.2.0-r0)
+(38/76) Installing libunibreak (6.1-r0)
+(39/76) Installing libass (0.17.4-r0)
+(40/76) Installing libudfread (1.2.0-r0)
+(41/76) Installing libbluray (1.4.0-r0)
+(42/76) Installing mpg123-libs (1.33.3-r0)
+(43/76) Installing libopenmpt (0.8.6-r0)
+(44/76) Installing cjson (1.7.19-r1)
+(45/76) Installing mbedtls (3.6.6-r0)
+(46/76) Installing librist (0.2.10-r1)
+(47/76) Installing libsrt (1.5.3-r1)
+(48/76) Installing libssh (0.11.4-r0)
+(49/76) Installing libsodium (1.0.20-r1)
+(50/76) Installing libzmq (4.3.5-r2)
+(51/76) Installing ffmpeg-libavformat (8.0.1-r1)
+(52/76) Installing serd-libs (0.32.4-r0)
+(53/76) Installing zix-libs (0.6.2-r0)
+(54/76) Installing sord-libs (0.16.18-r0)
+(55/76) Installing sratom (0.6.18-r0)
+(56/76) Installing lilv-libs (0.24.26-r0)
+(57/76) Installing libdovi (3.3.2-r0)
+(58/76) Installing vulkan-loader (1.4.321.0-r0)
+(59/76) Installing libplacebo (7.351.0-r0)
+(60/76) Installing ffmpeg-libswscale (8.0.1-r1)
+(61/76) Installing vidstab (1.1.1-r0)
+(62/76) Installing zimg (3.0.6-r0)
+(63/76) Installing ffmpeg-libavfilter (8.0.1-r1)
+(64/76) Installing libasyncns (0.8-r4)
+(65/76) Installing libltdl (2.5.4-r2)
+(66/76) Installing orc (0.4.41-r0)
+(67/76) Installing libflac (1.4.3-r2)
+(68/76) Installing libsndfile (1.2.2-r2)
+(69/76) Installing speexdsp (1.2.1-r2)
+(70/76) Installing tdb-libs (1.4.14-r0)
+(71/76) Installing libpulse (17.0-r5)
+(72/76) Installing libjpeg-turbo (3.1.2-r0)
+(73/76) Installing json-c (0.18-r1)
+(74/76) Installing v4l-utils-libs (1.32.0-r0)
+(75/76) Installing ffmpeg-libavdevice (8.0.1-r1)
+(76/76) Installing ffmpeg (8.0.1-r1)
+Executing busybox-1.37.0-r30.trigger
+Executing glib-2.86.3-r0.trigger
+OK: 468.0 MiB in 211 packages
+
+Running `/sbin/apk add python-pygame` at 2026-05-04 15:44:58
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  python-pygame (no such package):
+    required by: world[python-pygame]
+
+Running `/sbin/apk add pygame` at 2026-05-04 15:45:03
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  pygame (no such package):
+    required by: world[pygame]
+
+Running `/sbin/apk add pip` at 2026-05-04 15:45:28
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  pip (no such package):
+    required by: world[pip]
+
+Running `/sbin/apk add py3-pygame` at 2026-05-04 15:45:47
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/12) Installing py3-pygame-pyc (2.6.1-r0)
+( 2/12) Installing openblas (0.3.30-r2)
+( 3/12) Installing py3-numpy (2.3.5-r0)
+( 4/12) Installing py3-numpy-tests (2.3.5-r0)
+( 5/12) Installing py3-numpy-pyc (2.3.5-r0)
+( 6/12) Installing sdl3 (3.2.26-r0)
+( 7/12) Installing sdl2-compat (2.32.58-r0)
+( 8/12) Installing sdl2_image (2.8.8-r0)
+( 9/12) Installing sdl2_mixer (2.8.1-r0)
+(10/12) Installing sdl2_ttf (2.24.0-r0)
+(11/12) Installing portmidi (2.0.4-r0)
+(12/12) Installing py3-pygame (2.6.1-r0)
+OK: 510.0 MiB in 223 packages
+
+Running `/sbin/apk add ffplay` at 2026-05-04 16:01:00
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing ffplay (8.0.1-r1)
+Executing busybox-1.37.0-r30.trigger
+OK: 510.2 MiB in 224 packages
+
+Running `/sbin/apk add fbdoom` at 2026-05-05 09:30:37
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  fbdoom (no such package):
+    required by: world[fbdoom]
+
+Running `/sbin/apk add git` at 2026-05-05 09:31:08
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/2) Installing git (2.52.0-r0)
+(2/2) Installing git-init-template (2.52.0-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 516.1 MiB in 226 packages
+
+Running `/sbin/apk add make` at 2026-05-05 09:32:40
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing make (4.4.1-r3)
+Executing busybox-1.37.0-r30.trigger
+OK: 516.4 MiB in 227 packages
+
+Running `apk add gcc` at 2026-05-05 09:34:36
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/7) Installing jansson (2.14.1-r0)
+(2/7) Installing binutils (2.45.1-r0)
+(3/7) Installing libatomic (15.2.0-r2)
+(4/7) Installing isl26 (0.26-r1)
+(5/7) Installing mpfr4 (4.2.2-r0)
+(6/7) Installing mpc1 (1.3.1-r1)
+(7/7) Installing gcc (15.2.0-r2)
+Executing busybox-1.37.0-r30.trigger
+OK: 720.8 MiB in 234 packages
+
+Running `apk add build-essential` at 2026-05-05 09:35:50
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  build-essential (no such package):
+    required by: world[build-essential]
+
+Running `apk add alpine-sdk` at 2026-05-05 09:36:00
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/17) Installing libcap2 (2.78-r0)
+( 2/17) Installing libcap-getcap (2.78-r0)
+( 3/17) Installing fakeroot (1.37.1.2-r0)
+( 4/17) Installing lzip (1.25-r0)
+( 5/17) Installing openssl (3.5.6-r0)
+( 6/17) Installing patch (2.8-r0)
+( 7/17) Installing tar (1.35-r4)
+( 8/17) Installing abuild (3.16.0-r0)
+  Executing abuild-3.16.0-r0.pre-install
+( 9/17) Installing abuild-sudo (3.16.0-r0)
+(10/17) Installing libmagic (5.46-r2)
+(11/17) Installing file (5.46-r2)
+(12/17) Installing libstdc++-dev (15.2.0-r2)
+(13/17) Installing musl-dev (1.2.5-r23)
+(14/17) Installing g++ (15.2.0-r2)
+(15/17) Installing fortify-headers (1.1-r5)
+(16/17) Installing build-base (0.5-r3)
+(17/17) Installing alpine-sdk (1.1-r0)
+Executing busybox-1.37.0-r30.trigger
+OK: 847.5 MiB in 251 packages
+
+Running `apk add linux-headers` at 2026-05-05 09:37:32
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing linux-headers (6.16.12-r0)
+OK: 853.2 MiB in 252 packages
+
+Running `apk add ld` at 2026-05-05 09:43:16
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  ld (no such package):
+    required by: world[ld]
+
+Running `apk add sdl sdl-dev` at 2026-05-05 09:43:54
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  sdl (no such package):
+    required by: world[sdl]
+  sdl-dev (no such package):
+    required by: world[sdl-dev]
+
+Running `apk add sdl` at 2026-05-05 09:43:58
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  sdl (no such package):
+    required by: world[sdl]
+
+Running `apk add sdl-dev` at 2026-05-05 09:44:06
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  sdl-dev (no such package):
+    required by: world[sdl-dev]
+
+Running `apk add sdl3` at 2026-05-05 09:44:23
+apk-tools 3.0.6-r0, compiled for riscv64.
+OK: 853.2 MiB in 252 packages
+
+Running `apk add sdl12-compat` at 2026-05-05 09:44:44
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing sdl12-compat (1.2.68-r2)
+OK: 853.3 MiB in 253 packages
+
+Running `apk add sdl12-compat-dev` at 2026-05-05 09:46:14
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/1) Installing sdl12-compat-dev (1.2.68-r2)
+Executing busybox-1.37.0-r30.trigger
+OK: 853.8 MiB in 254 packages
+
+Running `apk del build-essential gcc sdl12-compat-dev` at 2026-05-05 09:47:36
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: No such package: build-essential
+
+Running `apk del alpine-dev gcc sdl12-compat-dev` at 2026-05-05 09:47:44
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: No such package: alpine-dev
+
+Running `apk del alpine-sdk gcc sdl12-compat-dev` at 2026-05-05 09:48:17
+apk-tools 3.0.6-r0, compiled for riscv64.
+( 1/25) Purging abuild-sudo (3.16.0-r0)
+( 2/25) Purging alpine-sdk (1.1-r0)
+( 3/25) Purging abuild (3.16.0-r0)
+( 4/25) Purging fakeroot (1.37.1.2-r0)
+( 5/25) Purging lzip (1.25-r0)
+( 6/25) Purging openssl (3.5.6-r0)
+( 7/25) Purging tar (1.35-r4)
+( 8/25) Purging build-base (0.5-r3)
+( 9/25) Purging file (5.46-r2)
+(10/25) Purging g++ (15.2.0-r2)
+(11/25) Purging libstdc++-dev (15.2.0-r2)
+(12/25) Purging gcc (15.2.0-r2)
+(13/25) Purging binutils (2.45.1-r0)
+(14/25) Purging libatomic (15.2.0-r2)
+(15/25) Purging fortify-headers (1.1-r5)
+(16/25) Purging patch (2.8-r0)
+(17/25) Purging isl26 (0.26-r1)
+(18/25) Purging jansson (2.14.1-r0)
+(19/25) Purging libcap-getcap (2.78-r0)
+(20/25) Purging libcap2 (2.78-r0)
+(21/25) Purging libmagic (5.46-r2)
+(22/25) Purging mpc1 (1.3.1-r1)
+(23/25) Purging mpfr4 (4.2.2-r0)
+(24/25) Purging musl-dev (1.2.5-r23)
+(25/25) Purging sdl12-compat-dev (1.2.68-r2)
+Executing busybox-1.37.0-r30.trigger
+OK: 522.2 MiB in 229 packages

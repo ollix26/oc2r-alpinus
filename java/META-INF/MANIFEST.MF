@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+FMLAT: accesstransformer.cfg
+Specification-Title: oc2r
+Specification-Vendor: North Western Development (Originally by Sangar)
+Specification-Version: 1
+Implementation-Title: oc2r-1.20.1-forge
+Implementation-Version: 2.2.13
+Implementation-Vendor: North Western Development (Originally by Sangar)
+Implementation-Timestamp: 2026-04-28T12:53:15+0000
+MixinConfigs: mixins.oc2r.json
+ContainedDeps: commons-collections4-4.4.jar
+

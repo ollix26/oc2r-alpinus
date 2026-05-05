@@ -1,0 +1,4 @@
+::sysinit:/bin/busybox mount -t proc proc /proc
+::sysinit:/bin/busybox mount -t sysfs sysfs /sys
+::sysinit:/bin/busybox mount -t devtmpfs devtmpfs /dev
+::respawn:/bin/sh

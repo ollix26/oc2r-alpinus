@@ -1,0 +1,48 @@
+{
+  "mappings": {
+    "li/cil/oc2/common/mixin/FrustumMixin": {
+      "offsetToFullyIncludeCameraCube": "Lnet/minecraft/client/renderer/culling/Frustum;m_194441_(I)Lnet/minecraft/client/renderer/culling/Frustum;"
+    },
+    "li/cil/oc2/common/mixin/ServerChunkCacheMixin": {
+      "save": "Lnet/minecraft/server/level/ServerChunkCache;m_8419_(Z)V"
+    },
+    "li/cil/oc2/common/mixin/LevelRendererMixin": {
+      "getItemEntityTarget": "Lnet/minecraft/client/renderer/LevelRenderer;m_109829_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+      "renderLevel": "Lnet/minecraft/client/renderer/LevelRenderer;m_109599_(Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;)V",
+      "Lnet/minecraft/util/profiling/ProfilerFiller;popPush(Ljava/lang/String;)V": "Lnet/minecraft/util/profiling/ProfilerFiller;m_6182_(Ljava/lang/String;)V",
+      "renderSnowAndRain": "Lnet/minecraft/client/renderer/LevelRenderer;m_109703_(Lnet/minecraft/client/renderer/LightTexture;FDDD)V",
+      "entityTarget": "Lnet/minecraft/client/renderer/LevelRenderer;m_109827_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+      "getWeatherTarget": "Lnet/minecraft/client/renderer/LevelRenderer;m_109831_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+      "shouldShowEntityOutlines": "Lnet/minecraft/client/renderer/LevelRenderer;m_109817_()Z",
+      "renderSky": "Lnet/minecraft/client/renderer/LevelRenderer;m_202423_(Lcom/mojang/blaze3d/vertex/PoseStack;Lorg/joml/Matrix4f;FLnet/minecraft/client/Camera;ZLjava/lang/Runnable;)V"
+    },
+    "li/cil/oc2/common/mixin/MinecraftMixin": {
+      "getMainRenderTarget": "Lnet/minecraft/client/Minecraft;m_91385_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+      "useShaderTransparency": "Lnet/minecraft/client/Minecraft;m_91085_()Z"
+    }
+  },
+  "data": {
+    "searge": {
+      "li/cil/oc2/common/mixin/FrustumMixin": {
+        "offsetToFullyIncludeCameraCube": "Lnet/minecraft/client/renderer/culling/Frustum;m_194441_(I)Lnet/minecraft/client/renderer/culling/Frustum;"
+      },
+      "li/cil/oc2/common/mixin/ServerChunkCacheMixin": {
+        "save": "Lnet/minecraft/server/level/ServerChunkCache;m_8419_(Z)V"
+      },
+      "li/cil/oc2/common/mixin/LevelRendererMixin": {
+        "getItemEntityTarget": "Lnet/minecraft/client/renderer/LevelRenderer;m_109829_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+        "renderLevel": "Lnet/minecraft/client/renderer/LevelRenderer;m_109599_(Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lorg/joml/Matrix4f;)V",
+        "Lnet/minecraft/util/profiling/ProfilerFiller;popPush(Ljava/lang/String;)V": "Lnet/minecraft/util/profiling/ProfilerFiller;m_6182_(Ljava/lang/String;)V",
+        "renderSnowAndRain": "Lnet/minecraft/client/renderer/LevelRenderer;m_109703_(Lnet/minecraft/client/renderer/LightTexture;FDDD)V",
+        "entityTarget": "Lnet/minecraft/client/renderer/LevelRenderer;m_109827_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+        "getWeatherTarget": "Lnet/minecraft/client/renderer/LevelRenderer;m_109831_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+        "shouldShowEntityOutlines": "Lnet/minecraft/client/renderer/LevelRenderer;m_109817_()Z",
+        "renderSky": "Lnet/minecraft/client/renderer/LevelRenderer;m_202423_(Lcom/mojang/blaze3d/vertex/PoseStack;Lorg/joml/Matrix4f;FLnet/minecraft/client/Camera;ZLjava/lang/Runnable;)V"
+      },
+      "li/cil/oc2/common/mixin/MinecraftMixin": {
+        "getMainRenderTarget": "Lnet/minecraft/client/Minecraft;m_91385_()Lcom/mojang/blaze3d/pipeline/RenderTarget;",
+        "useShaderTransparency": "Lnet/minecraft/client/Minecraft;m_91085_()Z"
+      }
+    }
+  }
+}
