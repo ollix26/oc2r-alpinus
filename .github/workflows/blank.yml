@@ -1,0 +1,40 @@
+name: Build sedna.jar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'new-rootfs-X11/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mkcramfs
+        run: sudo apt-get install -y cramfsprogs
+
+      - name: Build rootfs.cramfs into sedna/generated/
+        run: mkcramfs new-rootfs-X11/ sedna/generated/rootfs.cramfs
+
+      - name: Repack sedna/ → sedna_inner.jar
+        run: |
+          cd sedna
+          zip -r ../sedna_inner.jar .
+          cd ..
+
+      - name: Inject sedna_inner.jar into java/ and repack → sedna.jar
+        run: |
+          cp sedna_inner.jar java/META-INF/jarjar/sedna.jar
+          cd java
+          zip -r ../sedna.jar .
+          cd ..
+
+      - name: Commit final sedna.jar
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sedna.jar
+          git commit -m "Auto-rebuild sedna.jar from new-rootfs-X11" || echo "No changes"
+          git push
