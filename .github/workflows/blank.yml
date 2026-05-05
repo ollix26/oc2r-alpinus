@@ -20,6 +20,12 @@ jobs:
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y gcc make zlib1g-dev wget zip git
 
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
       - name: Build mkcramfs from source
         run: |
           wget https://github.com/npitre/cramfs-tools/archive/refs/heads/master.tar.gz
@@ -35,16 +41,16 @@ jobs:
       - name: Repack sedna/ → sedna_inner.jar
         run: |
           cd sedna
-          zip -r ../sedna_inner.jar .
+          jar cf ../sedna_inner.jar .
           cd ..
 
-      - name: Inject and repack → sedna.jar
+      - name: Inject and repack → final jar
         run: |
           cp sedna_inner.jar java/META-INF/jarjar/sedna.jar
           cd java
-          zip -r ../sedna.jar .
+          jar cf ../oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar .
           cd ..
-
+          
       - name: Rename artifact
         run: mv sedna.jar oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar
 
