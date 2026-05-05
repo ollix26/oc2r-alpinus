@@ -63,9 +63,6 @@ jobs:
           "
           cd ..
           
-      - name: Rename artifact
-        run: mv sedna.jar oc2r-alpinus-X11-1.${{ github.run_number }}.0.jar
-
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
