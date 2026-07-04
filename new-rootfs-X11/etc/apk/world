@@ -14,6 +14,7 @@ git
 linux-headers
 lsblk
 lua
+lua5.4-posix
 make
 musl-utils
 py3-pygame

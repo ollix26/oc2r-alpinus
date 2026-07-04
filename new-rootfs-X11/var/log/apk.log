@@ -732,3 +732,15 @@ apk-tools 3.0.6-r0, compiled for riscv64.
 v3.23.5-22-gaa6632a22aa [https://dl-cdn.alpinelinux.org/alpine/v3.23/main]
 v3.23.5-20-g80e818b4aac [https://dl-cdn.alpinelinux.org/alpine/v3.23/community]
 OK: 25766 distinct packages available
+
+Running `/sbin/apk add luaposix` at 2026-07-04 17:56:12
+apk-tools 3.0.6-r0, compiled for riscv64.
+ERROR: unable to select packages:
+  luaposix (no such package):
+    required by: world[luaposix]
+
+Running `/sbin/apk add lua5.4-posix` at 2026-07-04 17:57:52
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/2) Installing lua5.4-bit32 (5.3.0-r6)
+(2/2) Installing lua5.4-posix (36.3-r0)
+OK: 523.0 MiB in 233 packages
