@@ -17138,6 +17138,20 @@ R:lsblk
 a:0:0:755
 Z:Q17Noiw0Eu/SHsMeyHx6D1Ccvdil4=
 
+C:Q1ObNqV+OhYdBuwmLLeOhEMLas5co=
+P:lua-cjson
+V:2.1.0-r11
+A:riscv64
+S:1033
+I:0
+T:fast JSON parsing and encoding support for Lua
+U:https://www.kyne.au/~mark/software/lua-cjson.php
+L:MIT
+o:lua-cjson
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1755518428
+c:9eafd573bdcdb03eb6eb394afd52f480236fb9fe
+
 C:Q1TO4TF006jTXqvU8E1PjnX6xfthw=
 P:lua5.4
 V:5.4.8-r0
@@ -17187,6 +17201,35 @@ F:usr/lib/lua/5.4
 R:bit32.so
 a:0:0:755
 Z:Q1/ANN2sQDWmzoFqvx+7stUKih+Wg=
+
+C:Q1J2j58ImOCkzN+nQT1YbWHmDtGT8=
+P:lua5.4-cjson
+V:2.1.0-r11
+A:riscv64
+S:13245
+I:30707
+T:fast JSON parsing and encoding support for Lua 5.4
+U:https://www.kyne.au/~mark/software/lua-cjson.php
+L:MIT
+o:lua-cjson
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1755518428
+c:9eafd573bdcdb03eb6eb394afd52f480236fb9fe
+D:lua5.4 so:libc.musl-riscv64.so.1
+i:lua-cjson=2.1.0-r11 lua5.4
+F:usr
+F:usr/lib
+F:usr/lib/lua
+F:usr/lib/lua/5.4
+R:cjson.so
+a:0:0:755
+Z:Q1WwRZWd+5vpdspvMlwjGAaxMQG4Q=
+F:usr/lib/luarocks
+F:usr/lib/luarocks/rocks-5.4
+F:usr/lib/luarocks/rocks-5.4/lua-cjson
+F:usr/lib/luarocks/rocks-5.4/lua-cjson/2.1.0-1
+R:rock_manifest
+Z:Q1UZZ505lw9NohCOKRYlwkiDf16M4=
 
 C:Q1NCiAbY7mM16lrvp8afVNkPARWFU=
 P:lua5.4-libs

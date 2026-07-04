@@ -744,3 +744,13 @@ apk-tools 3.0.6-r0, compiled for riscv64.
 (1/2) Installing lua5.4-bit32 (5.3.0-r6)
 (2/2) Installing lua5.4-posix (36.3-r0)
 OK: 523.0 MiB in 233 packages
+
+Running `/sbin/apk add lua-cjson` at 2026-07-04 18:20:58
+apk-tools 3.0.6-r0, compiled for riscv64.
+(1/2) Installing lua-cjson (2.1.0-r11)
+(2/2) Installing lua5.4-cjson (2.1.0-r11)
+OK: 523.0 MiB in 235 packages
+
+Running `/sbin/apk add cjson` at 2026-07-04 18:21:02
+apk-tools 3.0.6-r0, compiled for riscv64.
+OK: 523.0 MiB in 235 packages

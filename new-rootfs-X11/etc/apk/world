@@ -3,6 +3,7 @@ alpine-keys
 alpine-release
 apk-tools
 busybox
+cjson
 curl
 e2fsprogs
 emacs
@@ -14,6 +15,7 @@ git
 linux-headers
 lsblk
 lua
+lua-cjson
 lua5.4-posix
 make
 musl-utils
