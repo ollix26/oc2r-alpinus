@@ -13,6 +13,7 @@ ffplay
 git
 linux-headers
 lsblk
+lua
 make
 musl-utils
 py3-pygame

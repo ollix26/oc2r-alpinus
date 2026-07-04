@@ -17138,6 +17138,63 @@ R:lsblk
 a:0:0:755
 Z:Q17Noiw0Eu/SHsMeyHx6D1Ccvdil4=
 
+C:Q1TO4TF006jTXqvU8E1PjnX6xfthw=
+P:lua5.4
+V:5.4.8-r0
+A:riscv64
+S:81901
+I:151096
+T:Powerful light-weight programming language
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1755518428
+c:51396ae87f96ef4c5ca1f85a058eca0ebebb48be
+k:400
+D:so:libc.musl-riscv64.so.1 so:liblua-5.4.so.0 so:libreadline.so.8
+p:lua cmd:lua5.4=5.4.8-r0 cmd:luac5.4=5.4.8-r0
+F:usr
+F:usr/bin
+R:lua5.4
+a:0:0:755
+Z:Q10/ZpPxbVImLrPOhVPqSvJ3qQspI=
+R:luac5.4
+a:0:0:755
+Z:Q1r9jXLsbafdA5q3OKQcQPS9dchek=
+
+C:Q1NCiAbY7mM16lrvp8afVNkPARWFU=
+P:lua5.4-libs
+V:5.4.8-r0
+A:riscv64
+S:108903
+I:211617
+T:Lua dynamic library runtime
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1755518428
+c:51396ae87f96ef4c5ca1f85a058eca0ebebb48be
+k:400
+D:so:libc.musl-riscv64.so.1
+p:so:liblua-5.4.so.0=0.0.0
+r:lua
+F:usr
+F:usr/lib
+R:liblua-5.4.so.0
+a:0:0:777
+Z:Q1dCqn8u30sU40yXtkvB88N2bu2ZM=
+R:liblua-5.4.so.0.0.0
+a:0:0:777
+Z:Q1pjgHmS0Zi2MeY++Dd1HoybvvPvM=
+F:usr/lib/lua5.4
+R:liblua-5.4.so.0
+a:0:0:777
+Z:Q1SyosgzYBMBewV7lYn+6JOPnBG24=
+R:liblua-5.4.so.0.0.0
+Z:Q1kTyGVt9hw0EMZA9Dbkc3WqJqUV0=
+
 C:Q1L5As5kosAjnDfCR1ACfychKMUM8=
 P:lz4-libs
 V:1.10.0-r0
