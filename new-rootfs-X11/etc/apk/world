@@ -3,6 +3,8 @@ alpine-keys
 alpine-release
 apk-tools
 busybox
+busybox-mdev-openrc
+busybox-openrc
 cjson
 curl
 e2fsprogs
@@ -19,6 +21,7 @@ lua-cjson
 lua5.4-posix
 make
 musl-utils
+openrc
 py3-pygame
 python3
 rsync
