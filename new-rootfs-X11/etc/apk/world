@@ -9,7 +9,6 @@ cjson
 curl
 e2fsprogs
 emacs
-emacs-nox
 fastfetch
 ffmpeg
 ffplay
@@ -34,5 +33,4 @@ xclock
 xf86-input-evdev
 xf86-video-fbdev
 xinit
-xorg-server
 xterm
