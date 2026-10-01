@@ -7,7 +7,8 @@ Working:
   ,Projector
   ,Framebuffer
   ,evdev keyboard input
+  Import/Export Card
 
 Not tested/working:
   Sound Card
-  Import/Export Card
+  
